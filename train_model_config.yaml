@@ -1,0 +1,32 @@
+model: "TransMatch"
+wd: 0.00001
+lr: 0.001
+batch_size: 1024
+test_batch_size: 128
+evaluation_interval: 2
+max_epoch: 300
+topk: 10
+hidden_dim: 32
+wide_evaluate: 0
+visual_feature_dim: 2048
+root_path: /mnt/juanjuan/cafidata/CP_TransMatch
+
+model_path: /model/
+result_path: /results/
+performance_path: /performance/
+
+save_results: 0  #save prediction results in evaluation if 1
+save_model: 0  #save the model if 1
+data_status: "use_old" #use_old, prepare_save, prepare_not_save
+
+context: 1  #considering context-enhanced module if 1
+path: 0  #considering path-enhanced module if 1
+neighbor_samples: 4  #number of neighbors to consider in the context-enhanced module
+context_hops: 3 #2 for iqon 3 for else  #number of hops to consider in the context-enhanced module
+neighbor_agg: "mean"
+score_type: "transE"
+agg_param: 0.2 #0.05 for iqon 0.2 for else  #weight of neighbour information to be propagated to the centered node
+max_path_len: 4  #maximum length of paths to consider
+path_num: 4  #number of considered qualified paths(randomly sample)
+path_weight: 1  #weight of path-based transition modeling
+path_agg: "mean"
