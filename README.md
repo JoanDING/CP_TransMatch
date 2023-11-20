@@ -11,7 +11,7 @@
 1. The entry script for training and evaluation is: [main.py](https://github.com/JoanDING/CP_TransMatch/blob/main/main.py)
 2. The config file is: [train_model_config.yaml](https://github.com/JoanDING/CP_TransMatch/blob/main/config.yaml)
 4. The script for data preprocess and dataloader: [utility.py](https://github.com/JoanDING/CP_TransMatch/blob/main/utility.py), [dataloader.py](https://github.com/JoanDING/CP_TransMatch/blob/main/dataloader.py)
-5. The CP_TransMatch model: CP_TransMatch.py](https://github.com/JoanDING/CP_TransMatch/blob/main/CP_TransMatch.py)
+5. The CP_TransMatch model: [CP_TransMatch.py](https://github.com/JoanDING/CP_TransMatch/blob/main/CP_TransMatch.py)
 6. Utility codes for evaluation: [eval_util.py](https://github.com/JoanDING/CP_TransMatch/blob/main/eval_utils.py)
 7. Utility codes for knowledge graph-relevant functions: [eval_util.py](https://github.com/JoanDING/CP_TransMatch/blob/main/kg_utils.py)
 8. The model folder: ./model/
